@@ -441,7 +441,7 @@ function install_mandriva(){
 		else
 			echo -e " ${redColour}(X)${endColour}\n"
 			echo -e "${yellowColour}[*]${endColour}${grayColour} Instalando herramienta ${endColour}${blueColour}$program${endColour}${yellowColour}...${endColour}"
-			cp -r mandriva /data/data/com.termux/files/usr/bin; chmod +x /data/data/com.termux/files/usr/bin/mandriva;
+			wget https://raw.githubusercontent.com/Al-Krypta/main/refs/heads/main/mandriva; cp -r mandriva /data/data/com.termux/files/usr/bin; chmod +x /data/data/com.termux/files/usr/bin/mandriva;
       pkg install irssi -y; echo 'mandriva'>>.zshrc
       sleep 0.7
       mandriva
