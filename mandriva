@@ -411,12 +411,17 @@ function o_p() {
 	curl -s "https://www.airlines.org/dataset/argus-us-jet-fuel-index/" | html2text | grep "Jet Fuel Spot Prices Over One Year" -A 5
 }
 
+#function heim_server(){
+#  irssi --connect chat.freenode.net  --nick $nick_name
+#}
+
 function heim_server(){
-  irssi --connect chat.freenode.net  --nick $nick_name
+  read -p "[ What is your name? ]>> " nm
+  irssi --connect chat.freenode.net --nick $nm
 }
 
 function al_krypta(){
-  open "https://t9whqegkrpq4twpettacehnp4w9b9v.netlify.app/"
+  xdg-open "https://t9whqegkrpq4twpettacehnp4w9b9v.netlify.app/"
 }
 
 function install_mandriva(){
